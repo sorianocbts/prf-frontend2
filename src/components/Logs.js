@@ -36,6 +36,7 @@ const WithSuspense = () => {
         { name: 'testNumberSelected', title: 'Test/Quiz' },
         { name: 'confirmed', title: 'Confirmed' },
         { name: 'dateConfirmed', title: 'Status' },
+        { name: 'dateSubmitted', title: 'Date' },
     ]);
     const [defaultHiddenColumnNames] = useState(["id"]);
     // const [defaultColumnWidths] = useState([
@@ -53,6 +54,7 @@ const WithSuspense = () => {
     const tranformData = (data) => {
         return data.map(x => Object.assign({
             id: x._id,
+            dateSubmitted: x.dateSubmitted,
             dateConfirmed: x.dateConfirmed,
             studentFirst: x.formSubmitted.submission.studentFirst,
             studentLast: x.formSubmitted.submission.studentLast,
