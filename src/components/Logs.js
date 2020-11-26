@@ -30,6 +30,7 @@ const WithSuspense = () => {
         { name: 'id', title: 'ID' },
         { name: 'studentLast', title: 'Last name' },
         { name: 'studentFirst', title: 'First name' },
+        { name: 'studentEmail', title: 'Student Email' },
         { name: 'proctorName', title: 'ProctorName' },
         { name: 'proctorEmail', title: 'Proctor Email' },
         { name: 'classCodeSelected', title: 'Class' },
